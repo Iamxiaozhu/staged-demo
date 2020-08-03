@@ -9,14 +9,18 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "npm run lint"
+            "pre-commit": "lint-staged"
         }
+    },
+    "lint-staged": {
+        "*.{js,jsx}": "eslint"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
         "eslint": "^7.6.0",
-        "husky": "^4.2.5"
+        "husky": "^4.2.5",
+        "lint-staged": "^10.2.11"
     }
 }
