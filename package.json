@@ -4,8 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "lint": "npx eslint ./src"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "husky": {
         "hooks": {
@@ -13,8 +12,9 @@
         }
     },
     "lint-staged": {
-        "*.{js,jsx}": "eslint",
-        "*.js": "eslint --cache --fix"
+        "src/*.js": [
+            "eslint"
+        ]
     },
     "keywords": [],
     "author": "",
